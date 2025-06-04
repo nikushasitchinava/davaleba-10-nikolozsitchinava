@@ -5,28 +5,28 @@
 
 
 body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-top: 84px;
     padding-bottom: 140px;
 }
 
 
-.header {
+header {
     display: flex;
-    flex-wrap: no-wrap;
-    flex-direction: row;
     position: fixed;
     justify-content: end;
-    gap: 50px;
     height: 84px;
-    right: 78px;
+    width: 100%;
     top: 0;
     z-index: 2;
 }
 
-.h1div {
+.headertextdiv {
     display: flex;
-    max-width: 180px;
-    min-width: 140px;
+    position: fixed;
+    justify-content: space-between;
+    width: 700px;
+    right: 78px;
 }
 
 .background {
@@ -39,20 +39,27 @@ body {
 }
 
 #geolab {
-    margin-top: 24px;
+    display: flex;
+    margin-top: 22px;
     margin-left: 88px;
     margin-right: 50px;
 }
-
-
 
 .headertext {
     display: flex;
     font-weight: 400%;
     font-size: 17px;
-    justify-content: space-between;
     color: #636060;
     margin-top: 33px;
+}
+
+
+i {
+    display: none !important;
+    font-size: 50px !important;
+    color: #636060;
+    margin-top: 15px !important;
+    margin-right: 78px;
 }
 
 
@@ -89,7 +96,8 @@ body {
 }
 
 .limagephotodiv {
-    width: 548px;
+    width: 595px;
+    height: 200px;
     position: absolute;
 }
 
@@ -150,8 +158,6 @@ body {
     width: 100%;
     flex-wrap: wrap;
 }
-
-
 
 
 .divtext {
@@ -293,4 +299,67 @@ body {
 
 #under3 {
     margin-top: 56px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.devicenotgreatsize {
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 975px) {
+  i {
+    display: inline-block !important;
+  }
+
+  .headertextdiv {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 300px) {
+  header {
+    display: none;
+  }
+
+  #geolab {
+    display: none;
+  }
+
+  .twodivs {
+    display: none;
+  }
+
+  .largephotodiv {
+    display: none;
+  }
+
+  .devicenotgreatsize {
+    display: block;
+}
 }
