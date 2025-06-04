@@ -352,3 +352,30 @@ i {
     display: block;
 }
 }
+
+
+
+
+@media only screen and (max-width: 607px) {
+  .imagetext {
+    position: absolute;
+    display: flex;
+    font-weight: 700;
+    font-size: 59px;
+    color: white;
+
+}
+
+
+.smallimagetext {
+    font-size: 14px;
+}
+
+
+.limagephotodiv {
+    width: 447px;
+    height: 200px;
+    position: absolute;
+}
+
+}
