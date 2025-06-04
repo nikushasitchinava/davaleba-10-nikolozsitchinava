@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +24,13 @@ body {
 
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
-    justify-content: end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
     height: 84px;
     width: 100%;
     top: 0;
@@ -27,9 +38,13 @@ header {
 }
 
 .headertextdiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     width: 700px;
     right: 78px;
 }
@@ -44,6 +59,8 @@ header {
 }
 
 #geolab {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 22px;
     margin-left: 88px;
@@ -51,6 +68,8 @@ header {
 }
 
 .headertext {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 400%;
     font-size: 17px;
@@ -82,10 +101,16 @@ i {
 
 
 .largephotodiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .limagephotodiv {
@@ -96,6 +121,8 @@ i {
 
 .imagetext {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 700;
     font-size: 79px;
@@ -106,11 +133,15 @@ i {
 
 .smallimagetext {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 400;
     font-size: 19px;
     color: white;
-    align-self: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
     top: 100px;
     right: 170px;
 }
@@ -118,6 +149,8 @@ i {
 
 
 #bigphoto {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 1920px;
     min-width: 150px;
@@ -135,17 +168,27 @@ i {
 
 
 .twodivs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 }
 
 
 .divtext {
     width: 235px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 
@@ -178,11 +221,21 @@ i {
 
 .cardsdiv {
     width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 15px;
 }
 
@@ -283,6 +336,8 @@ i {
 @media only screen and (max-width: 612px) {
   .imagetext {
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-weight: 700;
     font-size: 59px;
