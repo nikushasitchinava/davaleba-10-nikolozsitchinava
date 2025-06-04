@@ -237,7 +237,6 @@ i {
 
 
 
-
 /* @media -s */
 
 
@@ -281,7 +280,7 @@ i {
 
 
 
-@media only screen and (max-width: 607px) {
+@media only screen and (max-width: 612px) {
   .imagetext {
     position: absolute;
     display: flex;
@@ -301,6 +300,16 @@ i {
     width: 447px;
     height: 200px;
     position: absolute;
+}
+
+.cardsdiv {
+    width: 500px;
+}
+
+
+.divtext {
+    width: 400px;
+    margin-bottom: 20px;
 }
 
 }
