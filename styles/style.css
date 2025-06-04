@@ -11,6 +11,11 @@ body {
 }
 
 
+
+/* header - geolab - a - burger */
+
+
+
 header {
     display: flex;
     position: fixed;
@@ -69,22 +74,10 @@ i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* the big photo and text inside centered */
+
+
+
 
 
 
@@ -180,32 +173,16 @@ i {
 
 
 
-
-
-
-
-
-
-
-
 /* Cards */
 
 
 
-
-
-
-
-
-.cards {
+.cardsdiv {
     display: flex;
     flex-direction: row;
     width: 638;
-    gap: 33px;
-    justify-content: space-between;
     flex-wrap: wrap;
     display: inline-block;
-    margin-right: 33px;
 }
 
 
@@ -217,7 +194,7 @@ i {
 
 .card {
     width: 286px;
-    height: 312px;
+    height: 350px;
 }
 
 
@@ -236,59 +213,6 @@ i {
     margin-top: 9px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.cards2 {
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-    justify-content: space-between;
-    width: 638;
-    gap: 33px;
-    flex-wrap: wrap;
-    margin-right: 33px;
-}
-
-
-
-.cards3 {
-    display: flex;
-    flex-direction: row;
-    display: inline-block;
-    justify-content: space-between;
-    width: 638;
-    gap: 33px;
-    flex-wrap: wrap;
-}
-
-
-#under1 {
-    margin-top: 56px;
-}
-
-
-
-#under2 {
-    margin-top: 56px;
-}
-
-
-#under3 {
-    margin-top: 56px;
-}
 
 
 
